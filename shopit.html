@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Royalo Investment</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="product.css">
+ 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="container" id="container">
+		<nav class="navbar bg-dark navbar-expand-lg navbar-dark justify-content-center" id="a" style="background: #510055 !important; ">
+			<a href="" class="navbar-brand text-white" style="font-size: 24px">Royalo Investment</a>
+		</nav>
+		<div class="container-fluid">
+		<button type="button" class="btn btn-success btn-lg text-white shadow-lg p-2 mb-4" onclick="starter()" id="start">Click Here</button>
+		</div>
+		
+	</div>
+	<div style="display: none;" id="shop">
+		<center>
+			<div class="row">
+				<h2 class="p-1" style="background: #510055;">Royalo Investment</h2>
+			</div>
+			<table class="table text-white" style="width: 70%; background: #510055;">
+				<thead>
+					<tr>
+						<th>PRODUCTS</th>
+						<th>QUANTITY<br>AVAILABLE</br></th>
+						<th>UNIT<br>COSTS</br><b id="naira">N</b></th>
+						<th>ORDERS</th>
+						<th>TOTAL</th>
+						<th>OVERVIEW</th>
+					</tr>
+				</thead>
+
+				<tr>
+					<td><img src="images/car.jpg" alt="car" id="car" onmouseover="forall('images/car.jpg')" onmouseout="normal()"><small>Car</small></td>
+					<td id="t1">50</td>
+					<td>8,000</td>
+					<td><input type="number" onkeyup="total1()" id="order1"  class="myTd"></td>
+					<td class="myTd"  id="demo"></td>
+					<td rowspan="4"><div class="border border-dark" id="myPic"><img id="pic"></div></td>
+				</tr>
+
+				<tr>
+					<td><img src="images/laptop.jpg" alt="laptop" onmouseover="forall('images/laptop.jpg')" onmouseout="normal()"><small>Laptop</small></td>
+					<td id="t2">50</td>
+					<td>5,000</td>
+					<td><input type="number" onkeyup="total2()" id="order2"  class="myTd"></td>
+					<td class="myTd" id="demo1"></td>
+				</tr>
+
+				<tr>
+					<td><img src="images/phone.jpg" alt="phone" onmouseover="forall('images/phone.jpg')" onmouseout="normal()"><small>Phone</small></td>
+					<td id="t3">25</td>
+					<td>3,000</td>
+					<td><input type="number" onkeyup="total3()" id="order3"  class="myTd"></td>
+					<td class="myTd" id="demo2"></td>
+				</tr>
+
+				<tr>
+					<td><img src="images/tablet.jpg" alt="Tablet" onmouseover="forall('images/tablet.jpg')" onmouseout="normal()"><small>Tablet</small></td>
+					<td id="t4">40</td>
+					<td>4,000</td>
+					<td><input type="number" onkeyup="total4()" id="order4"  class="myTd"></td>
+					<td class="myTd" id="demo3"></td>
+				</tr>
+
+				<tr>
+					<td><img src="images/typewriter.jpg" alt="Twriter" onmouseover="forall('images/typewriter.jpg')" onmouseout="normal()"><small>Twriter</small></td>
+					<td id="t5">30</td>
+					<td>1,000</td>
+					<td><input type="number" onkeyup="total5()" id="order5"  class="myTd"></td>
+					<td class="myTd" id="demo4"></td>
+					<td rowspan="4"></td>
+				</tr>
+
+				<tr>
+					<td><img src="images/camera.jpg" alt="Camera" onmouseover="forall('images/camera.jpg')" onmouseout="normal()"><small>Camera</small></td>
+					<td id="t6">42</td>
+					<td>3,000</td>
+					<td><input type="number" onkeyup="total6()" id="order6"  class="myTd"></td>
+					<td class="myTd" id="demo5"></td>
+				</tr>
+
+				<tr>
+					<td><img src="images/mic.jpg" alt="Mic" onmouseover="forall('images/mic.jpg')" onmouseout="normal()"><small>Mic</small></td>
+					<td id="t7">50</td>
+					<td>2,000</td>
+					<td><input type="number" onkeyup="total7()" id="order7" class="myTd"></td>
+					<td class="myTd" id="demo6"></td>
+				</tr>
+
+				<tr>
+					<td><img src="images/drone.jpg" alt="Drone" onmouseover="forall('images/drone.jpg')" onmouseout="normal()"><small>Drone</small></td>
+					<td id="t8">35</td>
+					<td>10,000</td>
+					<td><input type="number" onkeyup="total8()" id="order8"  class="myTd"></td>
+					<td class="myTd" id="demo7"></td>
+				</tr>
+
+				<tr id="totallast">
+					<td colspan="3" align="center" style="font-size:20px; height:40px">OVERALL TOTAL<br><b id="naira" style="height:40px;">N</b></td>
+					<td colspan="2" align="center"><div id="overall"  align="center"></div></td>
+					<td><input type="button" onclick="printer()" value="PRINT" id="pr"/></td>
+					<div id="product">
+					</div>
+				</tr>
+			</table>
+		</center>
+	</div>
+	
+	<script type="text/javascript">
+		// var Quantity1 = 50, Quantity2 = 50, Quantity3 = 25, Quantity4 = 40, Quantity5 = 30, Quantity6 = 42, Quantity7 = 50, Quantity8 = 35, Subtotal, total;
+		// var over= document.getElementById('overall');
+
+		// function starter() {
+		//     container.style.display = "none";
+		//     shop.style.display = "block";
+		// }
+
+		// function total1() {
+		//     var Subtotal = 8000*order1.value;
+		//     (Quantity1 >= order1.value)?
+		//    	demo.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity');
+		//     t1.innerHTML = (Number(Quantity1)-Number(order1.value));
+		//     if (Quantity1 <= "0" ) { Quantity1 == "0"};
+		//     var total = 8000*order1.value;
+		//     over.innerHTML= total
+		// }
+
+		// function total2() {
+		//     var Subtotal = 5000*order2.value;
+		//     (Quantity2 >= order2.value)?
+		//     demo1.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity'); 
+		//     t2.innerHTML = (Number(Quantity2)-Number(order2.value));
+		//     var total = parseFloat(8000*order1.value)+parseFloat(5000*order2.value);
+		//     over.innerHTML= total
+		// }
+
+		// function total3() {
+		//     var Subtotal = 3000*order3.value;
+		//     (Quantity3 >= order3.value)?
+		//     demo2.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity'); 
+		//     t3.innerHTML = (Number(Quantity3)-Number(order3.value));
+		//     var total = parseFloat(8000*order1.value)+parseFloat(5000*order2.value)+parseFloat(3000*order3.value);
+		//     over.innerHTML = total
+		// }
+
+		// function total4() {
+		//     var Subtotal = 4000*order4.value;
+		//     (Quantity4 >= order4.value)?
+		//     demo3.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity');
+		//     t4.innerHTML = (Number(Quantity4)-Number(order4.value));
+		//     var total = parseFloat(8000*order1.value)+parseFloat(5000*order2.value)+parseFloat(3000*order3.value)
+		//     			+parseFloat(4000*order4.value);
+		//     over.innerHTML= total
+		// }
+		// function total5() {
+		//     var Subtotal = 1000*order5.value;
+		//     (Quantity5 >= order5.value)?
+		//     demo4.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity'); 
+		//     t5.innerHTML = (Number(Quantity5)-Number(order5.value));
+		//     var total = parseFloat(8000*order1.value)+parseFloat(5000*order2.value)+parseFloat(3000*order3.value)
+		//     			+parseFloat(4000*order4.value)+parseFloat(1000*order5.value);
+		//     over.innerHTML= total
+		// }
+
+		// function total6() {
+		//     var Subtotal = 5000*order6.value;
+		//     (Quantity6 >= order6.value)?
+		//     demo5.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity');
+		//     t6.innerHTML = (Number(Quantity6)-Number(order6.value));
+		//     var total = parseFloat(8000*order1.value)+parseFloat(5000*order2.value)+parseFloat(3000*order3.value)
+		//     			+parseFloat(4000*order4.value)+parseFloat(1000*order5.value)+parseFloat(5000*order6.value);
+		//     over.innerHTML= total;
+		// }
+
+		// function total7() {
+		//     var Subtotal = 2000*order7.value;
+		//     (Quantity7 >= order7.value)?
+		//     demo6.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity'); 
+		//     t7.innerHTML = (Number(Quantity7)-Number(order7.value));
+		//     var total = parseFloat(8000*order1.value)+parseFloat(5000*order2.value)+parseFloat(3000*order3.value)
+		//     			+parseFloat(4000*order4.value)+parseFloat(1000*order5.value)+parseFloat(5000*order6.value)+parseFloat(2000*order7.value);
+		//     over.innerHTML= total
+		// }
+
+		// function total8() {
+		//     var Subtotal = 10000*order8.value;
+		//     (Quantity8 >= order8.value)?
+		//     demo7.innerHTML= Subtotal: alert('SORRY USER! Your requested quantity has exceeded the available quantity'); 
+		//     t8.innerHTML = (Number(Quantity8)-Number(order8.value));
+		//     var total = + parseFloat(8000*order1.value) + parseFloat(5000*order2.value) + parseFloat(3000*order3.value)
+		//     			+parseFloat(4000*order4.value)+parseFloat(1000*order5.value)+parseFloat(5000*order6.value)+parseFloat(2000*order7.value)+parseFloat(10000*order8.value);
+		//     over.innerHTML= total
+		// }
+
+		// function forall(a){ 
+		//     pic.style.display = 'inline';
+		//     pic.src=a;  }
+
+		// function normal() {
+
+		//     pic.style = "none";
+		// }
+
+		// function printer()
+		// {
+		//     if (confirm("Do you want to print the receipt?"))
+		//     {
+		//         alert("Are you sure")
+		//         if ("Are you sure") 
+		//         {
+		//             w = window.open();
+		//     w.document.write(receiptSection.innerHTML)
+		//     w.print(i)
+		//         }
+		//     }
+		//     else
+		//     {
+		//         alert("OK! You are not sure")
+		//     }
+		// }
+
+	</script>
+
+	<script type="text/javascript" src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+	body{
+			width: 100%;
+			color: #9aee2b;
+			height: 100vh;
+		}
+		.container{
+			height: 100vh;
+			background: #672ea3;
+			display: block;
+		}
+		.container-fluid{
+			height: 88vh;
+			width: 70%;
+			background: #672ea3;
+		}
+		.btn-success{
+			margin-top: 60vh;
+			margin-left: 40%;	
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		}
+		h2{
+			background: #510055;
+			border-radius: 20%;
+			margin-left: 40%;
+		}
+
+		tr{
+			font-size: 20px;
+			text-align: center;
+			border: 4px solid black;
+		}
+
+		img{
+			width: 60px; 
+			height: 35px;
+		}
+
+		small{
+			font-size: 10px;
+			margin-top: -60px;
+		}
+
+		#naira{
+			text-decoration: double line-through;
+		}
+		#myPic{
+			width: 250px;
+			height: 250px;
+		}
+		#pic{
+			width: 100%;
+			height: 100%;
+			display: none;
+		}
+		#pr{
+			width: 100px;
+			height: 40px;
+			color: #752236;
+			background-color: #9aee2b;
+			border-radius: 30%;
+		}
+		.myTd{
+			height: 100%;
+			width:80px;
+			font-size:25px;
+		}
